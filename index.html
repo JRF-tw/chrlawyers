@@ -25,6 +25,27 @@
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <!--script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
    <![endif]-->
+   
+   <!--addthis-->
+   <script type="text/javascript">
+//<![CDATA[
+  (function() {
+    var shr = document.createElement('script');
+    shr.setAttribute('data-cfasync', 'false');
+    shr.src = '//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js';
+    shr.type = 'text/javascript'; shr.async = 'true';
+    shr.onload = shr.onreadystatechange = function() {
+      var rs = this.readyState;
+      if (rs && rs != 'complete' && rs != 'loaded') return;
+      var site_id = 'd6c67d998129654e4db2ae9542d31604';
+      try { Shareaholic.init(site_id); } catch (e) {}
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(shr, s);
+  })();
+//]]>
+</script>
+
 </head>
 <body>
 <!-- google -->
@@ -38,15 +59,7 @@
   ga('send', 'pageview');
 
 </script>
-<!-- FB -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.4&appId=369380406596077";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+
 <!-- 導引列-->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
@@ -77,7 +90,7 @@
         <h3 class="text-center">聲援中國人權律師—連署聲明</h3>
         <h1 class="text-center title">律師要有人權？多麼卑微的請求！</h1>
         <p class="text-center">
-        <div class="fb-share-button" data-href="http://chrlawyers.jrf.org.tw/" data-layout="box_count"></div>
+        <div class='shareaholic-canvas' data-app='share_buttons' data-app-id=''></div>
         </p>
         <blockquote>
           <p>我不認同你認為你該說的意見，但我誓死捍衛你表達意見的權利。</p>
@@ -98,10 +111,10 @@
               <li>記者會時間：7/20(一) 中午13:00-13:30</li>
               <li>地點：白色恐怖政治受難者紀念碑（懷寧街跟凱道口）</li>
               <li>聲援行動：
-              <ol>
-              <li>千人網路連署聲援名單</li>
-              <li>百位律師聲援中國人權律師及人士，<strong>反穿律師袍</strong>抗議中國鎮壓式逮捕</li>
-              </ol>
+                <ol>
+                  <li>千人網路連署聲援名單</li>
+                  <li>百位律師聲援中國人權律師及人士，<strong>反穿律師袍</strong>抗議中國鎮壓式逮捕</li>
+                </ol>
               </li>
             </ul>
           </div>
@@ -279,8 +292,7 @@ cj(document).ready(function(){
           臺灣蠻野心足生態協會<br>
           監所關注小組<br>
           彩虹原丁行動聯盟<br>
-          陳文成基金會
-        </p>
+          陳文成基金會 </p>
         <p>（陸續邀請中）</p>
       </div>
     </div>
@@ -289,7 +301,7 @@ cj(document).ready(function(){
 <!-- JavaScript files placed at the end of the document so the pages load faster
 		================================================== -->
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a8b63b01187ee0" async="async"></script>
+
 <!--CRM -->
 <script type="text/javascript" src="https://jrf.neticrm.tw/sites/all/modules/civicrm/packages/jquery/jquery.js"></script>
 <script type="text/javascript" src="https://jrf.neticrm.tw/sites/all/modules/civicrm/packages/jquery/jquery-ui/js/jquery-ui-1.9.1.custom.min.js"></script>
@@ -318,7 +330,6 @@ cj(document).ready(function(){
 <script type="text/javascript" src="https://jrf.neticrm.tw/sites/all/modules/civicrm/js/jquery/jquery.crmasmselect.js"></script>
 <script type="text/javascript" src="https://jrf.neticrm.tw/sites/all/modules/civicrm/js/jquery/jquery.crmtooltip.js"></script>
 <script type="text/javascript" src="https://jrf.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/jquery.dashboard.js"></script>
-
 <script src="//code.jquery.com/jquery-1.11.1.min.js" type="text/javascript"></script>
 <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
